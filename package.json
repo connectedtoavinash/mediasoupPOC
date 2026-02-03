@@ -1,0 +1,12 @@
+{
+    "name": "mediasoup-poc",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+        "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
